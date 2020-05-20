@@ -69,6 +69,7 @@ def img_plot(img_path, save_dir, frame_id, gt_x, gt_y, pred_x, pred_y):
     plt.plot(gt_x, gt_y, c='b')
     plt.plot(gt_x[-1], gt_y[-1], c='y', marker='x', markersize=12)
     fig = plt.gcf() # get current fig to avoid of empty img
+
     # adjust margin to make plt fit img
     plt.gca().xaxis.set_major_locator(plt.NullLocator())
     plt.gca().yaxis.set_major_locator(plt.NullLocator())
